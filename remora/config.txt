@@ -1,0 +1,137 @@
+{
+	"Board": "BIGTREETECH SKR v1.4",
+	"Modules": [
+		{
+			"Thread": "Servo",
+			"Type": "Reset Pin",
+			"Comment": "Reset pin",
+			"Pin": "1.31"
+		},
+		{
+			"Thread": "Base",
+			"Type": "Stepgen",
+			"Comment": "A - Joint 0 step generator",
+			"Joint Number": 0,
+			"Step Pin": "2.2",
+			"Direction Pin": "2.6",
+			"Enable Pin": "2.1"
+		},
+		{
+			"Thread": "On load",
+			"Type": "TMC2209",
+			"Comment": "A - Joint 0 TMC driver",
+			"RX pin": "1.10",
+			"RSense": 0.11,
+			"Current": 1500,
+			"Microsteps": 32,
+			"Stealth chop": "on",
+			"Stall sensitivity": 0
+		},
+		{
+			"Thread": "Base",
+			"Type": "Stepgen",
+			"Comment": "B - Joint 1 step generator",
+			"Joint Number": 1,
+			"Step Pin": "0.19",
+			"Direction Pin": "0.20",
+			"Enable Pin": "2.08"
+		},
+		{
+			"Thread": "On load",
+			"Type": "TMC2209",
+			"Comment": "B - Joint 1 TMC driver",
+			"RX pin": "1.9",
+			"RSense": 0.11,
+			"Current": 1500,
+			"Microsteps": 32,
+			"Stealth chop": "on",
+			"Stall sensitivity": 0
+		},
+		{
+			"Thread": "Base",
+			"Type": "Stepgen",
+			"Comment": "Z0 - Joint 2 step generator",
+			"Joint Number": 2,
+			"Step Pin": "0.22",
+			"Direction Pin": "2.11",
+			"Enable Pin": "0.21"
+		},
+		{
+			"Thread": "On load",
+			"Type": "TMC2209",
+			"Comment": "Z0 - Joint 2 TMC driver",
+			"RX pin": "1.8",
+			"RSense": 0.11,
+			"Current": 800,
+			"Microsteps": 32,
+			"Stealth chop": "on",
+			"Stall sensitivity": 0
+		},
+		{
+			"Thread": "Base",
+			"Type": "Stepgen",
+			"Comment": "Z1 - Joint 3 step generator",
+			"Joint Number": 3,
+			"Step Pin": "2.13",
+			"Direction Pin": "0.11",
+			"Enable Pin": "2.12"
+		},
+		{
+			"Thread": "On load",
+			"Type": "TMC2209",
+			"Comment": "Z1 - Joint 3 TMC driver",
+			"RX pin": "1.4",
+			"RSense": 0.11,
+			"Current": 800,
+			"Microsteps": 32,
+			"Stealth chop": "on",
+			"Stall sensitivity": 0
+		},
+		{
+			"Thread": "Servo",
+			"Type": "PWM",
+			"Comment": "Lights PWM",
+			"SP[i]": 2,
+			"PWM Pin": "2.4"
+		},
+		{
+			"Thread": "Servo",
+			"Type": "Digital Pin",
+			"Comment": "X min",
+			"Pin": "1.26",
+			"Mode": "Input",
+			"Data Bit": 0
+		},
+		{
+			"Thread": "Servo",
+			"Type": "Digital Pin",
+			"Comment": "Y min",
+			"Pin": "1.25",
+			"Mode": "Input",
+			"Data Bit": 1
+		},
+		{
+			"Thread": "Servo",
+			"Type": "Digital Pin",
+			"Comment": "Z min",
+			"Pin": "1.0",
+			"Mode": "Input",
+			"Data Bit": 2
+		},
+		{
+			"Thread": "Servo",
+			"Type": "Digital Pin",
+			"Comment": "Laser Power",
+			"Pin": "2.5",
+			"Mode": "Output",
+			"Data Bit": 3
+		},
+		{
+			"Thread": "Servo",
+			"Type": "PWM",
+			"Comment": "Laser PWM",
+			"SP[i]": 1,
+			"PWM Pin": "2.5"
+		}
+	]
+}
